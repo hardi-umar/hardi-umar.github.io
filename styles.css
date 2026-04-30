@@ -205,14 +205,15 @@ img {
   padding: 0.7rem;
   box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
   width: min(320px, 100%);
+  aspect-ratio: 1 / 1;
 }
 
 .portrait-frame img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 5 / 6;
+  height: 100%;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: center 16%;
+  object-position: center 18%;
   border-radius: 999px;
   display: block;
 }
