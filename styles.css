@@ -164,6 +164,10 @@ img {
   margin-bottom: 2rem;
 }
 
+.page-subsection {
+  margin-top: -0.35rem;
+}
+
 .page-title {
   font-size: clamp(2rem, 3.6vw, 2.8rem);
   letter-spacing: -0.02em;
@@ -533,6 +537,33 @@ h3 {
   margin: 1.2rem 0 0;
 }
 
+.focus-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem 1.25rem;
+  padding: 0;
+  margin: 1rem 0 0;
+}
+
+.focus-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.focus-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.75rem;
+  width: 0.38rem;
+  height: 0.38rem;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
 .chip-list li {
   padding: 0.45rem 0.72rem;
   border-radius: 999px;
@@ -721,6 +752,10 @@ h3 {
   .experience-layout,
   .card-grid,
   .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-list {
     grid-template-columns: 1fr;
   }
 
