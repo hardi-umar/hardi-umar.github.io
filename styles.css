@@ -608,7 +608,7 @@ h3 {
 }
 
 .education-card {
-  padding-bottom: 1.3rem;
+  padding-bottom: 1.1rem;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -618,18 +618,30 @@ h3 {
 }
 
 .education-degree {
-  margin: 0.45rem 0 0.9rem;
+  margin: 0.35rem 0 0.8rem;
   color: #1f2937;
   font-weight: 600;
+  font-size: 0.98rem;
 }
 
 .education-list {
-  margin-top: 1rem;
+  margin-top: 0.85rem;
 }
 
 .education-list li {
   background: #eff6ff;
   border-color: var(--accent-border);
+}
+
+.education-card h3 {
+  font-size: 1.16rem;
+  font-weight: 700;
+}
+
+.education-meta {
+  font-size: 0.9em;
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .tools-card {
